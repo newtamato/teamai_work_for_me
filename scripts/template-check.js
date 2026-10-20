@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { loadConfig } from './config.js';
 
 const hash = (value) => crypto.createHash('sha256').update(value).digest('hex');
@@ -17,10 +18,24 @@ export function walk(root, folder = '') {
     return entry.isDirectory() ? walk(root, file) : entry.isFile() ? [file] : [];
   });
 }
+function trackedFiles(root) {
+  try {
+    return execFileSync(
+      'git',
+      ['-c', 'core.quotePath=false', '-C', root, 'ls-files', '-z'],
+      { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] },
+    )
+      .split('\0')
+      .filter(Boolean);
+  } catch {
+    return walk(root);
+  }
+}
+
 export function validateStructure(root) {
   const errors = [];
   for (const file of ['AGENTS.md', 'README.md', 'agent.config.json', 'rules/development.md', 'rules/memory.md', 'rules/skills.md', 'rules/automations.md', 'rules/collaboration.md']) if (!localFile(root, file)) errors.push(`缺少入口文件：${file}`);
-  for (const file of walk(root).filter((name) => name.endsWith('.md'))) {
+  for (const file of trackedFiles(root).filter((name) => name.endsWith('.md'))) {
     const text = fs.readFileSync(path.join(root, file), 'utf8');
     // Fenced examples may contain intentionally unresolved consumer placeholders.
     const prose = text.replace(/```[\s\S]*?```/g, '');
