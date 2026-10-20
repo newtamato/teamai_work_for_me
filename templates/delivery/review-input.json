@@ -1,0 +1,13 @@
+{
+  "decision": "none",
+  "summary": "本次仅按既有规范完成一次性文字修订，没有新增可复用项目知识。",
+  "readPaths": ["memory/INDEX.md", "rules/memory.md", "rules/skills.md"],
+  "triggers": [{"kind": "none", "evidence": "变更已经由权威规则覆盖，不新增重复记忆条目。"}],
+  "entries": [],
+  "skillReview": [{
+    "decision": "none",
+    "reason": "本次一次性文案修订已经由现有规则覆盖，无需新增操作Skill。",
+    "recurrence": "未出现独立任务复用证据，也没有新增重复执行流程。",
+    "evidence": ["实际修改范围仅为本任务的文档修订；使用时替换为真实证据。"]
+  }]
+}

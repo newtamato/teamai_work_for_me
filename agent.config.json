@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "name": "uno-workspace",
+  "defaultBranch": "main",
+  "taskPrefix": "",
+  "repository": { "provider": "", "slug": "", "remote": "" },
+  "checks": [],
+  "release": { "enabled": false, "commands": [] },
+  "capabilities": { "enabled": false, "sources": [], "sourceDirectories": [], "commands": [], "exclusions": [] }
+}

@@ -1,0 +1,35 @@
+# 子项目（各自独立 git 仓库，不入治理仓库）
+caii-server/
+UnoOnline-Client/
+UnoOnline-Client-protocol-names/
+Carrom2/
+luban/
+uno-web/
+uno-query-web/
+
+# TeamAI 嵌套仓库与机器状态（后续单独迁移）
+.teamai/team-repo/
+.teamai/reports-wt/
+.teamai/learnings-wt/
+.teamai/state.json
+.teamai/config.yaml
+
+# 本地产物与杂散文件
+.DS_Store
+midscene_run/
+excels/
+game_documents/
+worktrees/
+.runtime/
+.worktree/
+node_modules/
+coverage/
+
+# 零字节杂散文件
+=
+chunk_host
+get
+hall_client_threads
+hall_host
+hall_port
+resp_data_

@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "name": "scheduled-audit",
+  "skill": ".agents/skills/scheduled-audit/SKILL.md",
+  "prompt": "调用[$scheduled-audit](.agents/skills/scheduled-audit/SKILL.md)执行项目治理审计。",
+  "timezone": "Asia/Shanghai",
+  "status": "PAUSED",
+  "schedule": "0 18 * * 1-5"
+}
