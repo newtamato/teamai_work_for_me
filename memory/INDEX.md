@@ -6,5 +6,7 @@
 |---|---|---|---|---|---|
 | [工作区治理边界](2026-10-09-workspace-governance.md) | 设计决策 | active | 2026-10-09 | 多仓库、TeamAI、记忆、Skill、接入 | UNO 工作区采用跨仓库治理，先纳管客户端和服务端，不覆盖现有未提交改动。 |
 | [UNO 聊天与礼物链路经验](2026-10-15-uno-live-chat-gift-flow.md) | 工程经验 | active | 2026-10-15 | UNO、LiveChat、礼物、4530、4531、GN_C_PLAYER_GIFT | UNO 玩家/观众聊天与礼物链路的服务职责、协议路径与 caii-test 验证方式。 |
+| [UNO 玩家头像/头像框协议链路](2026-09-21-uno-player-property-protocol.md) | 工程经验 | active | 2026-09-21 | UNO、头像、act_prop_id、avtar_url、协议 | UNO 玩家资产协议与落库链路盘点，双端一致无需改 proto。 |
+| [Carrom 社交系统迁移盘点](2026-09-21-carrom-social-chain-audit.md) | 设计决策 | active | 2026-09-21 | Carrom、社交、复用、League | UNO 复用 Carrom 社交链路，屏蔽工会/League 入口。 |
 
 维护格式见 [TEMPLATE.md](TEMPLATE.md)，状态与维护流程见 [记忆规则](../rules/memory.md)。新的记忆必须同时更新本索引，并写明来源、验证方式、失效条件和下次行动。任务回执属于交付审计，不加入本索引。

@@ -7,8 +7,8 @@
 1. `AGENTS.md`
 2. `doc/README.md`
 3. `doc/UNO_PROJECT_SPEC.md`
-4. `.teamai/rules/uno-cross-repo.md`
-5. `.teamai/workflow.md`
+4. `rules/uno-cross-repo.md`
+5. `doc/teamai-workflow.md`
 6. `doc/LINEAR_TEAMAI_WORKFLOW.md`
 7. 客户端、服务端和协议文档库中的最新相关文档
 8. Linear 对应 Issue、评论、依赖和阻塞状态

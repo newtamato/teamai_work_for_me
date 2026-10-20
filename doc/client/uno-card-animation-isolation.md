@@ -40,6 +40,8 @@
 
 桌面特效展示采用 latest-wins：普通效果新到先隐藏旧效果，只保留最新一个、不排队；本人交互选色打开时先清除装饰，期间抑制新装饰和重复选色请求，不能遮挡或关闭已有选择。已抑制效果不补播。隐藏/退出牌桌或切换 EffectRoot 时停止全部特效，清理展示所有权；同类特效可复用已隐藏实例。
 
+latest-wins 增量验证：Unity 6000.0.59f2 隔离项目运行全部 UNO Editor 测试，退出码 0，21/21 passed、0 failed/skipped，无编译错误；结果 `/tmp/uno-effect-channel-editmode.xml`，日志 `/tmp/uno-effect-channel-unity.log`。8 个运行时文件、3 个测试及 asmdef 与验证副本逐字节一致。新增 8 例覆盖跨类型替换、同类复用、交互保护、重复交互抑制、选择关闭后恢复展示、停止/换根节点清理及销毁池项清理。真实预制体视觉、自动隐藏计时和 OnDisable 运行时派发仍需人工/PlayMode 验收。
+
 真实特效预制体的视觉验收仍需人工进行。
 
 两种模式最终验证：Unity 6000.0.59f2 隔离副本执行整个 `Uno.AnimationIsolation.Editor.Tests` 程序集，退出码 0，13/13 用例通过，无编译错误；XML `/tmp/uno-wild-split-editmode-final.xml`，日志 `/tmp/uno-wild-split-unity-final.log`。已核对 8 个运行时源码、2 个测试及 asmdef 与验证副本逐字节一致。旧的“服务端颜色已知立即关窗”测试已按本轮契约替换为“展示后关闭”。复用测试主动注入旧完成回调，验证不会关闭新一轮选择；EditMode 不覆盖 DOTween runtime Kill 或 OnDisable 自动派发，禁用处理函数以显式调用验证。本结果不覆盖真实 PlayMode 生命周期派发或 DeskArrow 资源加载，仍需人工验证两类表现、箭头换色及拒绝回滚。

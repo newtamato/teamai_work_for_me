@@ -24,7 +24,7 @@ Linear 不是代码仓库；Git 不是任务看板；TeamAI 不是业务需求�
 1. 阅读 `AGENTS.md`。
 2. 阅读 `doc/README.md`。
 3. 阅读 `doc/UNO_PROJECT_SPEC.md`。
-4. 阅读 `.teamai/rules/uno-cross-repo.md` 和 `.teamai/workflow.md`。
+4. 阅读 `rules/uno-cross-repo.md` 和 `doc/teamai-workflow.md`。
 5. 查看 Linear 中对应的 Issue、评论、依赖和阻塞状态。
 6. 检查两个代码仓库的状态：
 

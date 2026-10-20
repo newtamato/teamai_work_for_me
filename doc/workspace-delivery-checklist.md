@@ -4,7 +4,7 @@
 
 ## 任务开始
 
-- [ ] 已读取 `AGENTS.md`、`doc/README.md`、`doc/UNO_PROJECT_SPEC.md`、`.teamai/rules/uno-cross-repo.md`、`.teamai/workflow.md`
+- [ ] 已读取 `AGENTS.md`、`doc/README.md`、`doc/UNO_PROJECT_SPEC.md`、`rules/uno-cross-repo.md`、`doc/teamai-workflow.md`
 - [ ] 已确认 Linear Issue、负责人、依赖和验收标准
 - [ ] 已记录客户端和服务端当前分支、脏文件、worktree
 - [ ] 已明确本轮允许修改的仓库和文件范围

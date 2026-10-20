@@ -23,8 +23,8 @@ UNO 工作区不是单一 Git 仓库，而是由 `UnoOnline-Client/`、`caii-ser
 
 - [工作区入口](../AGENTS.md)
 - [文档中心](../doc/README.md)
-- [TeamAI 协作说明](../.teamai/README.md)
-- [UNO 跨仓库规则](../.teamai/rules/uno-cross-repo.md)
+- [TeamAI 工作流](../doc/teamai-workflow.md)
+- [UNO 跨仓库规则](../rules/uno-cross-repo.md)
 - [Linear + TeamAI 流程](../doc/LINEAR_TEAMAI_WORKFLOW.md)
 
 2026-10-09 核对：工作区根目录不是 Git 仓库；客户端和服务端是独立 Git 仓库；客户端、服务端、Carrom2、Luban 均存在未提交或未跟踪内容，未对其执行写操作。

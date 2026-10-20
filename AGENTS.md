@@ -32,9 +32,9 @@ Before changing UNO client or server code, read:
 
 - `doc/README.md`
 - `doc/UNO_PROJECT_SPEC.md`
-- `.teamai/rules/uno-cross-repo.md`
-- `.teamai/workflow.md`
-- `.teamai/rules/uno-development-and-acceptance.md`
+- `rules/uno-cross-repo.md`
+- `rules/uno-development-and-acceptance.md`
+- `doc/teamai-workflow.md`
 - `doc/LINEAR_TEAMAI_WORKFLOW.md`
 
 For server work, also read `caii-server/AGENTS.md`: edit locally, then sync changed files to `root@192.168.53.48:/root/projects/caii-server` before compiling and testing.

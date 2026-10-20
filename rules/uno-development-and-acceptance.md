@@ -6,7 +6,7 @@
 
 开始修改前必须：
 
-1. 读取 `AGENTS.md`、`doc/README.md`、`doc/UNO_PROJECT_SPEC.md`、`.teamai/rules/uno-cross-repo.md`、`.teamai/workflow.md`、`doc/LINEAR_TEAMAI_WORKFLOW.md`。
+1. 读取 `AGENTS.md`、`doc/README.md`、`doc/UNO_PROJECT_SPEC.md`、`rules/uno-cross-repo.md`、`doc/teamai-workflow.md`、`doc/LINEAR_TEAMAI_WORKFLOW.md`。
 2. 读取本文件和适用的 `.codex/skills/*/SKILL.md`。
 3. 查找或创建 Linear Issue，并记录范围、影响链路、验证计划。
 4. 检查 `caii-server/` 和 `UnoOnline-Client/` 各自 git status，禁止覆盖无关未提交改动。

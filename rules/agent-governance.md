@@ -1,6 +1,6 @@
 # Agent 治理与经验沉淀规则
 
-> 本规则补充 TeamAI 的 Agent 交付约束，不替代 `doc/UNO_PROJECT_SPEC.md`、`.teamai/rules/uno-cross-repo.md` 或现有 `.codex/rules/`。
+> 本规则补充 TeamAI 的 Agent 交付约束，不替代 `doc/UNO_PROJECT_SPEC.md`、`rules/uno-cross-repo.md` 或现有 `.codex/rules/`。
 
 ## 适用范围
 
@@ -11,7 +11,7 @@
 ## 接手顺序
 
 1. 读取根目录 `AGENTS.md`。
-2. 读取 `doc/README.md`、`doc/UNO_PROJECT_SPEC.md`、`.teamai/rules/uno-cross-repo.md`、`.teamai/workflow.md` 和相关 Linear Issue。
+2. 读取 `doc/README.md`、`doc/UNO_PROJECT_SPEC.md`、`rules/uno-cross-repo.md`、`doc/teamai-workflow.md` 和相关 Linear Issue。
 3. 执行：
 
    ```bash

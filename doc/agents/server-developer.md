@@ -8,8 +8,8 @@
 2. `caii-server/AGENTS.md`
 3. `doc/README.md`
 4. `doc/UNO_PROJECT_SPEC.md`
-5. `.teamai/rules/uno-cross-repo.md`
-6. `.teamai/workflow.md`
+5. `rules/uno-cross-repo.md`
+6. `doc/teamai-workflow.md`
 7. `doc/LINEAR_TEAMAI_WORKFLOW.md`
 8. 服务端文档库中的最新相关文档
 9. Linear 对应 Issue、评论、依赖和阻塞状态
